@@ -139,6 +139,47 @@ Keterangan:
 
 Pemetaan tersebut merenggangkan nilai intensitas yang banyak menumpuk pada rentang tertentu ke rentang 0--255. Nilai \texttt{cdf\_min} dikurangkan agar intensitas terendah yang benar-benar muncul dipetakan ke 0. Pada notebook, tabel pemetaan ini kemudian digunakan langsung sebagai indeks NumPy untuk mengganti seluruh piksel.
 
+\subsubsection{Contoh Perhitungan Pemetaan Intensitas}
+
+Sebagai contoh, berdasarkan citra \texttt{cat.jpeg} yang telah dikonversi ke grayscale, jumlah seluruh piksel adalah:
+
+\[
+N = 722016
+\]
+
+Nilai CDF minimum yang bukan nol adalah:
+
+\[
+\operatorname{cdf}_{\min}=71
+\]
+
+Misalkan terdapat piksel dengan nilai intensitas $i=100$. Berdasarkan histogram kumulatif, diperoleh:
+
+\[
+\operatorname{cdf}(100)=665562
+\]
+
+Nilai intensitas baru dihitung menggunakan rumus Histogram Equalization:
+
+\[
+\begin{aligned}
+\text{baru}(100)
+&=\operatorname{round}\left(
+\frac{\operatorname{cdf}(100)-\operatorname{cdf}_{\min}}
+{N-\operatorname{cdf}_{\min}}
+\times 255
+\right)\\
+&=\operatorname{round}\left(
+\frac{665562-71}{722016-71}
+\times 255
+\right)\\
+&=\operatorname{round}(235.06)\\
+&=235
+\end{aligned}
+\]
+
+Dengan demikian, piksel yang semula memiliki intensitas 100 dipetakan menjadi intensitas 235. Proses pemetaan seperti ini dilakukan terhadap seluruh piksel pada citra menggunakan tabel pemetaan yang diperoleh dari CDF. Nilai intensitas yang banyak menumpuk akan direnggangkan sehingga kontras citra meningkat.
+
 \section{Metodologi dan Implementasi}
 
 \subsection{Alur Kerja}
@@ -255,7 +296,7 @@ Sumber teori, dokumentasi, dan kode yang digunakan dalam eksperimen adalah sebag
 
     \bibitem{github-globalhe}
     Haqiqien, ``globalhe: Implementasi Histogram Equalization,''
-    GitHub repository, \url{https://github.com/haqiqien/globalhe/tree/main}.
+    GitHub repository, \url{https://github.com/haqiqien/globalhe}.
 
     \bibitem{colab}
     Google Colab, ``Colaboratory,''
@@ -268,7 +309,7 @@ Kode lengkap tersedia pada notebook \texttt{python/Belajar\_Histogram\_Equalizat
 
 Repository GitHub proyek ini dapat diakses melalui tautan berikut:
 \begin{center}
-    \url{https://github.com/haqiqien/globalhe/tree/main}
+    \url{https://github.com/haqiqien/globalhe}
 \end{center}
 
 \end{document}

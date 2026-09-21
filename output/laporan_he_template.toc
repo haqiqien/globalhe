@@ -5,17 +5,18 @@
 \contentsline {section}{\numberline {2}Dasar Teori}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Histogram Citra}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Histogram Equalization}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Metodologi dan Implementasi}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Alur Kerja}{4}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.1}Contoh Perhitungan Pemetaan Intensitas}{4}{subsubsection.2.2.1}%
+\contentsline {section}{\numberline {3}Metodologi dan Implementasi}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Alur Kerja}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Implementasi Manual}{5}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Verifikasi terhadap OpenCV}{5}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Hasil dan Pembahasan}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Perbandingan Visual}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Perbandingan Histogram}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Statistik Kuantitatif}{6}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Uji Tambahan}{7}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}HE pada Citra dengan Kontras Tinggi}{7}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}HE pada Citra Berwarna melalui HSV}{7}{subsubsection.4.4.2}%
-\contentsline {section}{\numberline {5}Kesimpulan}{7}{section.5}%
+\contentsline {subsection}{\numberline {3.3}Verifikasi terhadap OpenCV}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Hasil dan Pembahasan}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Perbandingan Visual}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Perbandingan Histogram}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Statistik Kuantitatif}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Uji Tambahan}{8}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}HE pada Citra dengan Kontras Tinggi}{8}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}HE pada Citra Berwarna melalui HSV}{8}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}Kesimpulan}{8}{section.5}%
 \contentsline {section}{\numberline {6}Referensi}{8}{section.6}%
-\contentsline {section}{\numberline {A}Kode Lengkap}{8}{section.A}%
+\contentsline {section}{\numberline {A}Kode Lengkap}{9}{section.A}%

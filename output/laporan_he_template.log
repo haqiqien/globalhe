@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  21 SEP 2026 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.27)  21 SEP 2026 23:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,7 +503,7 @@ Overfull \hbox (61.80861pt too wide) in paragraph at lines 95--96
  fungsi \T1/cmtt/m/n/12 cv2.equalizeHist()\T1/cmr/m/n/12 . 
  []
 
-<img/cat.jpeg, id=118, 738.76pt x 984.67876pt>
+<img/cat.jpeg, id=123, 738.76pt x 984.67876pt>
 File: img/cat.jpeg Graphic file (type jpg)
 <use img/cat.jpeg>
 Package pdftex.def Info: img/cat.jpeg  used on input line 104.
@@ -520,43 +520,43 @@ si, ke-mu-dian memetakan
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 160.
-<img/verifikasi-opencv.png, id=153, 404.10976pt x 39.14626pt>
+nput line 201.
+
+[5]
+<img/verifikasi-opencv.png, id=173, 404.10976pt x 39.14626pt>
 File: img/verifikasi-opencv.png Graphic file (type png)
 <use img/verifikasi-opencv.png>
-Package pdftex.def Info: img/verifikasi-opencv.png  used on input line 184.
+Package pdftex.def Info: img/verifikasi-opencv.png  used on input line 225.
 (pdftex.def)             Requested size: 362.77525pt x 35.14288pt.
-<img/perbandingan-visual.png, id=155, 781.11826pt x 323.40825pt>
+<img/perbandingan-visual.png, id=175, 781.11826pt x 323.40825pt>
 File: img/perbandingan-visual.png Graphic file (type png)
 <use img/perbandingan-visual.png>
-Package pdftex.def Info: img/perbandingan-visual.png  used on input line 195.
+Package pdftex.def Info: img/perbandingan-visual.png  used on input line 236.
 (pdftex.def)             Requested size: 405.45047pt x 167.87222pt.
-
-[5 <./img/verifikasi-opencv.png>]
-<img/proses-he.png, id=181, 784.73175pt x 216.81pt>
+ [6 <./img/verifikasi-opencv.png> <./img/perbandingan-visual.png>]
+<img/proses-he.png, id=192, 784.73175pt x 216.81pt>
 File: img/proses-he.png Graphic file (type png)
 <use img/proses-he.png>
-Package pdftex.def Info: img/proses-he.png  used on input line 204.
+Package pdftex.def Info: img/proses-he.png  used on input line 245.
 (pdftex.def)             Requested size: 405.45047pt x 112.02065pt.
- [6 <./img/perbandingan-visual.png> <./img/proses-he.png>]
-<img/statistik.png, id=190, 410.7345pt x 118.64325pt>
+<img/statistik.png, id=193, 410.7345pt x 118.64325pt>
 File: img/statistik.png Graphic file (type png)
 <use img/statistik.png>
-Package pdftex.def Info: img/statistik.png  used on input line 229.
+Package pdftex.def Info: img/statistik.png  used on input line 270.
 (pdftex.def)             Requested size: 362.77525pt x 104.79196pt.
- [7 <./img/statistik.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 253--255
+ [7 <./img/proses-he.png> <./img/statistik.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 []\T1/cmr/m/n/12 NumPy Doc-u-men-ta-tion, ``numpy.histogram,'' [][]$\T1/cmtt/m/
 n/12 https : / / numpy . org / doc /
  []
 
 
-Overfull \hbox (32.55757pt too wide) in paragraph at lines 267--268
+Overfull \hbox (32.55757pt too wide) in paragraph at lines 308--309
 \T1/cmr/m/n/12 Kode lengkap terse-dia pada note-book \T1/cmtt/m/n/12 python/Bel
 ajar_Histogram_Equalization.ipynb\T1/cmr/m/n/12 .
  []
 
-[8]
+[8] [9]
 (C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\l
 aporan_he_template.aux)
  ***********
@@ -564,16 +564,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-04-28>
  ***********
 Package rerunfilecheck Info: File `laporan_he_template.out' has not changed.
-(rerunfilecheck)             Checksum: AC8F32858E2DB157EF83C894EC3FBAEC;3093.
+(rerunfilecheck)             Checksum: 18D802435A04AF0E9B772092C65F3871;3360.
  ) 
 Here is how much of TeX's memory you used:
- 13703 strings out of 467683
- 214017 string characters out of 5414721
- 911428 words of memory out of 5000000
- 42554 multiletter control sequences out of 15000+600000
+ 13710 strings out of 467683
+ 214183 string characters out of 5414721
+ 875659 words of memory out of 5000000
+ 42559 multiletter control sequences out of 15000+600000
  639514 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,532b,1378s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,532b,2217s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\kyous\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
 1095.pk> <C:\Users\kyous\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm0600.pk> <C:\Users\kyous\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -591,9 +591,9 @@ fb><C:/Users/kyous/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Users/kyous/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb>
 Output written on "C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital
-\globalhe\output\laporan_he_template.pdf" (8 pages, 870472 bytes).
+\globalhe\output\laporan_he_template.pdf" (9 pages, 874347 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 587 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

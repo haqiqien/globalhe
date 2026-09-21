@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1790006922.18433 "laporan_he_template.tex" "output/laporan_he_template.pdf" "laporan_he_template" 1790006927.21088 0
+["pdflatex"] 1790007430.98173 "laporan_he_template.tex" "output/laporan_he_template.pdf" "laporan_he_template" 1790007435.60024 0
   "C:/Users/kyous/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1789999473.44714 122053 af0347cf142371fbb1a8708ace8c3dce ""
   "C:/Users/kyous/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk" 1790001757.74554 14880 296b9b064e6d8ff4c5bea533b9b44b5c ""
   "C:/Users/kyous/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1790001767.08308 28440 34461f4ff4854687a37849f001996ae3 ""
@@ -98,18 +98,18 @@
   "C:/Users/kyous/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/kyous/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/kyous/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.aux" 1790006926.16146 4369 efa0707f19f477573ceba873b6602158 ""
-  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.out" 1790006926.17887 3093 ac8f32858e2db157ef83c894ec3fbaec ""
-  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.toc" 1790006926.18855 1711 f6570c09580402fee801013519561e73 ""
+  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.aux" 1790007434.53232 4524 62d437a936b7fe13fed63ee24498bdc0 ""
+  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.out" 1790007434.54694 3360 18d802435a04af0e9b772092c65f3871 ""
+  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.toc" 1790007434.5547 1825 3d2e76c23a75b301d841d0c1e4e3a694 ""
   "img/cat.jpeg" 1789976698.7898 84087 80252285cf0f7963c379ab09ef57be73 ""
   "img/perbandingan-visual.png" 1790005988.90617 579110 32a8ab7c720a0a0a787c20ee3ab0478d ""
   "img/proses-he.png" 1790006084.16603 87920 cadf3d5425ada6de835d1e8221112b6e ""
   "img/statistik.png" 1790006134.93927 13901 6cb88344a59355747244e2d12264f5e0 ""
   "img/verifikasi-opencv.png" 1790005931.75917 6625 952ccfa103210ce00ca0cbaf4285ef57 ""
-  "laporan_he_template.tex" 1790006913.86226 13189 7b0ae66fc0f4bf912cff35f5e0b1cf0a ""
-  "output/laporan_he_template.aux" 1790006926.16146 4369 efa0707f19f477573ceba873b6602158 "pdflatex"
-  "output/laporan_he_template.out" 1790006926.17887 3093 ac8f32858e2db157ef83c894ec3fbaec "pdflatex"
-  "output/laporan_he_template.toc" 1790006926.18855 1711 f6570c09580402fee801013519561e73 "pdflatex"
+  "laporan_he_template.tex" 1790007418.54076 14274 c74f89fb80c0aa68dbdc8f40b36874f6 ""
+  "output/laporan_he_template.aux" 1790007434.53232 4524 62d437a936b7fe13fed63ee24498bdc0 "pdflatex"
+  "output/laporan_he_template.out" 1790007434.54694 3360 18d802435a04af0e9b772092c65f3871 "pdflatex"
+  "output/laporan_he_template.toc" 1790007434.5547 1825 3d2e76c23a75b301d841d0c1e4e3a694 "pdflatex"
   (generated)
   "output/laporan_he_template.aux"
   "output/laporan_he_template.log"
