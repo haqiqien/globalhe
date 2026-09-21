@@ -93,7 +93,14 @@ Tujuan dari eksperimen ini adalah sebagai berikut:
 \end{enumerate}
 
 \subsection{Citra yang Digunakan}
-Citra yang digunakan dalam eksperimen ini adalah citra bernama \texttt{[nama\_file\_citra]} yang diperoleh dari \texttt{[sumber citra, misalnya Google atau dataset tertentu]}. Citra tersebut memiliki format \texttt{[PNG/JPG]} dengan ukuran sebesar \texttt{[lebar] $\times$ [tinggi]} piksel.
+Citra yang digunakan dalam eksperimen ini adalah berkas lokal \texttt{img/cat.jpeg}. Citra tersebut berformat JPEG dengan ukuran 736 $\times$ 981 piksel dan memiliki tiga kanal warna (RGB).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.62\textwidth]{img/cat.jpeg}
+    \caption{Citra asli \texttt{cat.jpeg} yang digunakan sebagai masukan eksperimen.}
+    \label{fig:citra-asli}
+\end{figure}
 
 Sebelum diproses menggunakan Histogram Equalization, citra dikonversi terlebih dahulu menjadi citra grayscale. Konversi ini dilakukan agar setiap piksel hanya memiliki satu nilai intensitas dengan rentang 0 sampai 255. Nilai 0 menunjukkan warna hitam, sedangkan nilai 255 menunjukkan warna putih.
 

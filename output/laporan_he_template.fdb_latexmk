@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1790002223.16287 "laporan_he_template.tex" "output/laporan_he_template.pdf" "laporan_he_template" 1790002227.11824 0
+["pdflatex"] 1790004499.13789 "laporan_he_template.tex" "output/laporan_he_template.pdf" "laporan_he_template" 1790004502.89718 0
   "C:/Users/kyous/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1789999473.44714 122053 af0347cf142371fbb1a8708ace8c3dce ""
   "C:/Users/kyous/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk" 1790001757.74554 14880 296b9b064e6d8ff4c5bea533b9b44b5c ""
   "C:/Users/kyous/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1790001767.08308 28440 34461f4ff4854687a37849f001996ae3 ""
@@ -98,13 +98,14 @@
   "C:/Users/kyous/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/kyous/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/kyous/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/tugas2/output/laporan_he_template.aux" 1790002225.95743 4961 52870d40f686b1eebf7e4d3022819d98 ""
-  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/tugas2/output/laporan_he_template.out" 1790002225.97019 3199 4804e9eab720e009f134e117d48b2251 ""
-  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/tugas2/output/laporan_he_template.toc" 1790002225.9792 1786 6643cf514979d4a71f78dba7a5deccaa ""
-  "laporan_he_template.tex" 1790002203.37124 8166 ddededf3c27f9efef2209bdb1a656b99 ""
-  "output/laporan_he_template.aux" 1790002225.95743 4961 52870d40f686b1eebf7e4d3022819d98 "pdflatex"
-  "output/laporan_he_template.out" 1790002225.97019 3199 4804e9eab720e009f134e117d48b2251 "pdflatex"
-  "output/laporan_he_template.toc" 1790002225.9792 1786 6643cf514979d4a71f78dba7a5deccaa "pdflatex"
+  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.aux" 1790004501.99667 5281 0c5aa1d28133bbd7b473f5f37890246e ""
+  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.out" 1790004502.00962 3199 4804e9eab720e009f134e117d48b2251 ""
+  "C:/Users/kyous/Downloads/En/s2/smt2/pengolahan citra digital/globalhe/output/laporan_he_template.toc" 1790004502.01865 1786 cc8d15ba925df6e438d2eee835523d82 ""
+  "img/cat.jpeg" 1789976698.7898 84087 80252285cf0f7963c379ab09ef57be73 ""
+  "laporan_he_template.tex" 1790004433.76464 11162 df37035e7c9d0573ea6e8289a4392ae3 ""
+  "output/laporan_he_template.aux" 1790004501.99667 5281 0c5aa1d28133bbd7b473f5f37890246e "pdflatex"
+  "output/laporan_he_template.out" 1790004502.00962 3199 4804e9eab720e009f134e117d48b2251 "pdflatex"
+  "output/laporan_he_template.toc" 1790004502.01865 1786 cc8d15ba925df6e438d2eee835523d82 "pdflatex"
   (generated)
   "output/laporan_he_template.aux"
   "output/laporan_he_template.log"

@@ -1,7 +1,7 @@
-PWD C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2
+PWD C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT laporan_he_template.tex
-OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.log
+OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.log
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -124,10 +124,10 @@ INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uni
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.aux
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.aux
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.aux
-OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.aux
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.aux
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.aux
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.aux
+OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.aux
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -137,14 +137,14 @@ INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-s
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.pdf
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.pdf
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm2074.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
@@ -153,9 +153,9 @@ INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tf
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.toc
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.toc
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.toc
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.toc
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.toc
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.toc
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -167,8 +167,16 @@ INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.toc
+OUTPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.toc
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
+INPUT .\img\cat.jpeg
+INPUT .\img\cat.jpeg
+INPUT .\img\cat.jpeg
+INPUT .\img\cat.jpeg
+INPUT .\img\cat.jpeg
+INPUT .\img\cat.jpeg
+INPUT .\img\cat.jpeg
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
@@ -176,14 +184,11 @@ INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm120
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
 INPUT C:\Users\kyous\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1095.tfm
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.aux
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\tugas2\output\laporan_he_template.out
-INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.aux
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
+INPUT C:\Users\kyous\Downloads\En\s2\smt2\pengolahan citra digital\globalhe\output\laporan_he_template.out
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk
@@ -192,6 +197,8 @@ INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
+INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\kyous\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk
