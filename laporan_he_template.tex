@@ -24,21 +24,25 @@
     citecolor=blue
 }
 
-\graphicspath{{screenshots/}}
+\graphicspath{{screenshots/}{img/}}
 
 % Menampilkan gambar jika tersedia. Jika belum ada, tampilkan kotak
 % penanda agar dokumen tetap dapat dikompilasi.
 \newcommand{\safeincludegraphics}[2][]{%
-    \IfFileExists{screenshots/#2}{%
-        \includegraphics[#1]{#2}%
+    \IfFileExists{img/#2}{%
+        \includegraphics[#1]{img/#2}%
     }{%
-        \fbox{%
-            \begin{minipage}{0.9\textwidth}
-                \centering
-                \vspace{1.5cm}
-                Gambar belum tersedia: \texttt{#2}
-                \vspace{1.5cm}
-            \end{minipage}%
+        \IfFileExists{screenshots/#2}{%
+            \includegraphics[#1]{screenshots/#2}%
+        }{%
+            \fbox{%
+                \begin{minipage}{0.9\textwidth}
+                    \centering
+                    \vspace{1.5cm}
+                    Gambar belum tersedia: \texttt{#2}
+                    \vspace{1.5cm}
+                \end{minipage}%
+            }%
         }%
     }%
 }
@@ -93,7 +97,7 @@ Tujuan dari eksperimen ini adalah sebagai berikut:
 \end{enumerate}
 
 \subsection{Citra yang Digunakan}
-Citra yang digunakan dalam eksperimen ini adalah berkas lokal \texttt{img/cat.jpeg}. Citra tersebut berformat JPEG dengan ukuran 736 $\times$ 981 piksel dan memiliki tiga kanal warna (RGB).
+Citra yang digunakan dalam eksperimen Google Colab adalah berkas \texttt{cat.jpeg} yang diunggah melalui fitur upload Colab. Citra tersebut berformat JPEG dengan ukuran 736 $\times$ 981 piksel dan memiliki tiga kanal warna (RGB).
 
 \begin{figure}[H]
     \centering
@@ -104,14 +108,14 @@ Citra yang digunakan dalam eksperimen ini adalah berkas lokal \texttt{img/cat.jp
 
 Sebelum diproses menggunakan Histogram Equalization, citra dikonversi terlebih dahulu menjadi citra grayscale. Konversi ini dilakukan agar setiap piksel hanya memiliki satu nilai intensitas dengan rentang 0 sampai 255. Nilai 0 menunjukkan warna hitam, sedangkan nilai 255 menunjukkan warna putih.
 
-Citra ini dipilih karena memiliki tingkat kontras yang relatif rendah. Berdasarkan histogram citra, sebagian besar nilai intensitas piksel menumpuk pada rentang \texttt{[contoh: 60--150]}. Penumpukan nilai pada rentang intensitas yang sempit menunjukkan bahwa citra belum memanfaatkan seluruh rentang intensitas 0 sampai 255 secara optimal. Akibatnya, beberapa detail pada area gelap atau terang terlihat kurang jelas.
+Citra ini dipilih karena memiliki tingkat kontras yang relatif rendah. Pada notebook, citra dibaca dengan \texttt{cv2.IMREAD\_GRAYSCALE}, kemudian nilai minimum, maksimum, rata-rata, dan standar deviasi dicetak sebelum diproses. Histogram tersebut menjadi dasar perhitungan CDF dan tabel pemetaan HE.
 
 Melalui Histogram Equalization, nilai-nilai intensitas yang menumpuk tersebut dipetakan ke rentang yang lebih luas. Proses ini diharapkan dapat meningkatkan perbedaan antara area gelap dan terang sehingga detail citra menjadi lebih mudah diamati.
 
 \section{Dasar Teori}
 
 \subsection{Histogram Citra}
-Jelaskan pengertian histogram citra dan hubungan distribusi intensitas dengan kontras.
+Histogram citra adalah frekuensi kemunculan setiap nilai intensitas dari 0 sampai 255. Histogram yang terkonsentrasi pada rentang sempit menunjukkan kontras yang rendah, sedangkan histogram yang tersebar pada rentang lebih luas biasanya menunjukkan perbedaan terang-gelap yang lebih kuat.
 
 \subsection{Histogram Equalization}
 Histogram Equalization mengubah nilai intensitas berdasarkan histogram kumulatif atau \textit{cumulative distribution function} (CDF). Tahapan umumnya adalah menghitung histogram $h(i)$, menghitung CDF, melakukan normalisasi, kemudian memetakan nilai piksel.
@@ -133,7 +137,7 @@ Keterangan:
     \item $N$ adalah jumlah piksel pada citra.
 \end{itemize}
 
-Jelaskan dengan bahasa sendiri mengapa pemetaan tersebut dapat meningkatkan kontras. Hubungkan penjelasan dengan nilai intensitas yang sering muncul dan kecuraman CDF.
+Pemetaan tersebut merenggangkan nilai intensitas yang banyak menumpuk pada rentang tertentu ke rentang 0--255. Nilai \texttt{cdf\_min} dikurangkan agar intensitas terendah yang benar-benar muncul dipetakan ke 0. Pada notebook, tabel pemetaan ini kemudian digunakan langsung sebagai indeks NumPy untuk mengganti seluruh piksel.
 
 \section{Metodologi dan Implementasi}
 
@@ -151,22 +155,29 @@ Alur eksperimen yang dilakukan adalah:
 \end{enumerate}
 
 \subsection{Implementasi Manual}
-Masukkan kode implementasi manual Histogram Equalization berikut atau lampirkan kode lengkap pada bagian lampiran.
+Notebook mengimplementasikan HE manual menggunakan NumPy. Fungsi berikut menghitung histogram, CDF, normalisasi, dan mengganti nilai piksel tanpa memanggil fungsi HE OpenCV.
 
 \begin{lstlisting}[style=pythonstyle,caption={Implementasi manual Histogram Equalization}]
-# Tempel kode implementasi manual HE dari Google Colab di sini.
-# Kode harus menghitung histogram, CDF, normalisasi,
-# dan pemetaan piksel tanpa hanya memanggil cv2.equalizeHist().
+def histogram_equalization_manual(gray_img):
+    hist, _ = np.histogram(gray_img.ravel(), bins=256, range=(0, 256))
+    cdf = hist.cumsum()
+    cdf_min = cdf[cdf > 0].min()
+    N = gray_img.size
+    if N == cdf_min:
+        cdf_normalized = np.arange(256, dtype=np.uint8)
+    else:
+        cdf_normalized = np.round(
+            (cdf - cdf_min) / (N - cdf_min) * 255
+        )
+        cdf_normalized = np.clip(
+            cdf_normalized, 0, 255
+        ).astype(np.uint8)
+    equalized = cdf_normalized[gray_img]
+    return equalized, hist, cdf, cdf_normalized
 \end{lstlisting}
 
-\begin{figure}[H]
-    \centering
-    \safeincludegraphics[width=0.95\textwidth]{kode-he-manual.png}
-    \caption{Kode implementasi Histogram Equalization secara manual.}
-\end{figure}
-
 \subsection{Verifikasi terhadap OpenCV}
-Jelaskan metode verifikasi dan nilai selisih antara hasil implementasi manual dengan hasil dari \texttt{cv2.equalizeHist()}.
+Hasil manual diverifikasi dengan \texttt{cv2.equalizeHist(img)}. Notebook menghitung nilai absolut selisih setiap piksel, kemudian mencetak rata-rata dan selisih maksimum. Jika keduanya bernilai nol atau sangat dekat dengan nol, implementasi manual mengikuti hasil OpenCV.
 
 \begin{figure}[H]
     \centering
@@ -177,7 +188,7 @@ Jelaskan metode verifikasi dan nilai selisih antara hasil implementasi manual de
 \section{Hasil dan Pembahasan}
 
 \subsection{Perbandingan Visual}
-Jelaskan perubahan visual citra asli setelah Histogram Equalization, terutama perubahan kontras dan detail yang terlihat.
+Perbandingan visual pada notebook menampilkan citra grayscale asli, hasil HE manual, dan hasil HE OpenCV secara berdampingan. Hasil HE diharapkan memiliki rentang intensitas yang lebih lebar sehingga perbedaan area gelap dan terang lebih mudah diamati.
 
 \begin{figure}[H]
     \centering
@@ -186,25 +197,16 @@ Jelaskan perubahan visual citra asli setelah Histogram Equalization, terutama pe
 \end{figure}
 
 \subsection{Perbandingan Histogram}
-Jelaskan perubahan bentuk histogram sebelum dan sesudah HE. Hubungkan perubahan tersebut dengan penyebaran nilai intensitas.
+Notebook menumpuk histogram sebelum dan sesudah HE. Histogram sesudah HE cenderung tersebar lebih luas karena nilai intensitas yang sebelumnya menumpuk telah dipetakan menggunakan CDF. Output notebook juga menampilkan kurva CDF dan tabel pemetaan dalam satu grafik gabungan.
 
 \begin{figure}[H]
     \centering
-    \safeincludegraphics[width=0.9\textwidth]{histogram-overlay.png}
-    \caption{Histogram citra sebelum dan sesudah Histogram Equalization.}
-\end{figure}
-
-\subsection{Kurva CDF}
-Jelaskan hubungan antara kecuraman kurva CDF dan seberapa jauh nilai piksel direnggangkan oleh proses pemetaan.
-
-\begin{figure}[H]
-    \centering
-    \safeincludegraphics[width=0.9\textwidth]{kurva-cdf.png}
-    \caption{Kurva CDF citra sebelum dan sesudah Histogram Equalization.}
+    \safeincludegraphics[width=0.95\textwidth]{proses-he.png}
+    \caption{Histogram, kurva CDF, dan tabel pemetaan dari proses HE.}
 \end{figure}
 
 \subsection{Statistik Kuantitatif}
-Masukkan nilai mean, standar deviasi, dan entropy sebelum serta sesudah HE. Interpretasikan perubahan setiap nilai.
+Notebook menghitung mean, standar deviasi, entropy, dan rentang intensitas sebelum serta sesudah HE. Berdasarkan hasil eksekusi pada citra \texttt{cat.jpeg}, standar deviasi meningkat dari 36.74 menjadi 72.55, yang menunjukkan peningkatan penyebaran intensitas. Entropy berubah dari 6.627 menjadi 6.508; hal ini menunjukkan bahwa HE tidak selalu menambah informasi baru meskipun kontras meningkat.
 
 \begin{table}[H]
     \centering
@@ -214,9 +216,10 @@ Masukkan nilai mean, standar deviasi, dan entropy sebelum serta sesudah HE. Inte
         \toprule
         Statistik & Sebelum HE & Sesudah HE \\
         \midrule
-        Mean & [isi] & [isi] \\
-        Standar deviasi & [isi] & [isi] \\
-        Entropy & [isi] & [isi] \\
+        Mean & 43.87 & 129.21 \\
+        Standar deviasi & 36.74 & 72.55 \\
+        Entropy (bit) & 6.627 & 6.508 \\
+        Rentang intensitas & 0--255 & 0--255 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -224,50 +227,48 @@ Masukkan nilai mean, standar deviasi, dan entropy sebelum serta sesudah HE. Inte
 \begin{figure}[H]
     \centering
     \safeincludegraphics[width=0.85\textwidth]{statistik.png}
-    \caption{Output statistik mean, standar deviasi, dan entropy.}
+    \caption{Output statistik mean, standar deviasi, entropy, dan rentang intensitas.}
 \end{figure}
 
 \subsection{Uji Tambahan}
 
 \subsubsection{HE pada Citra dengan Kontras Tinggi}
-Jelaskan hasil penerapan HE pada citra yang sejak awal memiliki kontras tinggi. Bahas apakah citra berubah sedikit atau muncul artefak, lalu hubungkan dengan kurva CDF.
-
-\begin{figure}[H]
-    \centering
-    \safeincludegraphics[width=0.95\textwidth]{uji-kontras-tinggi.png}
-    \caption{Hasil uji HE pada citra dengan kontras tinggi.}
-\end{figure}
+Notebook menyediakan latihan untuk mencoba foto lain yang sejak awal memiliki kontras tinggi. Bagian ini belum menghasilkan output pada notebook utama, sehingga tidak memerlukan screenshot. HE dapat memberi perubahan kecil atau mempertegas noise, karena metode ini bekerja secara global berdasarkan distribusi seluruh citra.
 
 \subsubsection{HE pada Citra Berwarna melalui HSV}
-Jelaskan perbedaan penerapan HE pada channel V dalam ruang warna HSV dibandingkan penerapan HE pada channel R, G, dan B secara terpisah.
-
-\begin{figure}[H]
-    \centering
-    \safeincludegraphics[width=0.95\textwidth]{uji-warna-hsv.png}
-    \caption{Perbandingan penerapan HE pada citra berwarna melalui channel V HSV.}
-\end{figure}
+Notebook menyediakan kode latihan yang masih dikomentari untuk mengubah citra BGR ke HSV, menerapkan HE hanya pada channel V, lalu mengembalikannya ke BGR. Bagian ini belum menghasilkan output pada notebook utama, sehingga tidak memerlukan screenshot. Pendekatan ini lebih aman terhadap warna dibandingkan menerapkan HE terpisah pada channel R, G, dan B yang dapat mengubah keseimbangan warna.
 
 \section{Kesimpulan}
-Ringkas kapan Histogram Equalization efektif dan kapan kurang efektif berdasarkan hasil eksperimen. Sebutkan juga keterbatasannya, terutama sifatnya yang global dan tidak menyesuaikan diri terhadap area lokal citra.
+Histogram Equalization efektif untuk memperlebar distribusi intensitas citra dengan kontras rendah. Pada \texttt{cat.jpeg}, standar deviasi meningkat dari 36.74 menjadi 72.55 dan rentang hasil tetap 0--255. Entropy justru berubah dari 6.627 menjadi 6.508, sehingga peningkatan kontras tidak selalu berarti penambahan informasi. Karena bersifat global, metode ini tidak menyesuaikan pemetaan untuk setiap area lokal; CLAHE dapat dipertimbangkan jika detail lokal lebih penting.
 
 \section{Referensi}
-Tuliskan semua sumber teori, dokumentasi, artikel, atau buku yang digunakan.
+Sumber teori, dokumentasi, dan kode yang digunakan dalam eksperimen adalah sebagai berikut.
 
 \begin{thebibliography}{9}
     \bibitem{opencv}
     OpenCV Documentation, ``Histogram Equalization,''
-    \url{https://docs.opencv.org/}.
+    \url{https://docs.opencv.org/4.x/d4/d1b/tutorial_histogram_equalization.html}.
 
-    \bibitem{referensi-tambahan}
-    [Tambahkan referensi lain yang digunakan].
+    \bibitem{numpy}
+    NumPy Documentation, ``numpy.histogram,''
+    \url{https://numpy.org/doc/stable/reference/generated/numpy.histogram.html}.
+
+    \bibitem{github-globalhe}
+    Haqiqien, ``globalhe: Implementasi Histogram Equalization,''
+    GitHub repository, \url{https://github.com/haqiqien/globalhe/tree/main}.
+
+    \bibitem{colab}
+    Google Colab, ``Colaboratory,''
+    \url{https://colab.research.google.com/}.
 \end{thebibliography}
 
 \appendix
 \section{Kode Lengkap}
-Lampirkan kode lengkap dari notebook Google Colab atau tautan menuju notebook.
+Kode lengkap tersedia pada notebook \texttt{python/Belajar\_Histogram\_Equalization.ipynb}. Notebook dijalankan menggunakan Google Colab; pengguna mengunggah berkas citra melalui tombol upload pada sel pertama sebelum menjalankan tahapan Histogram Equalization.
 
-\begin{lstlisting}[style=pythonstyle,caption={Kode lengkap eksperimen}]
-# Tempel kode lengkap di sini atau tuliskan tautan notebook Colab.
-\end{lstlisting}
+Repository GitHub proyek ini dapat diakses melalui tautan berikut:
+\begin{center}
+    \url{https://github.com/haqiqien/globalhe/tree/main}
+\end{center}
 
 \end{document}
