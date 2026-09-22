@@ -186,13 +186,17 @@ Dengan demikian, piksel yang semula memiliki intensitas 100 dipetakan menjadi in
 Alur eksperimen yang dilakukan adalah:
 
 \begin{enumerate}
-    \item Membaca citra asli.
-    \item Mengubah citra menjadi grayscale.
-    \item Menghitung histogram.
-    \item Menghitung CDF.
-    \item Menormalisasi CDF.
-    \item Memetakan setiap piksel ke nilai intensitas baru.
-    \item Membandingkan hasil manual dengan implementasi OpenCV.
+    \item Mengunggah citra \texttt{cat.jpeg} melalui fitur upload Google Colab.
+    \item Membaca citra dan mengubahnya menjadi grayscale.
+    \item Menampilkan citra grayscale serta menghitung histogram awal.
+    \item Menghitung histogram dan CDF citra.
+    \item Menentukan nilai \texttt{cdf\_min} dan jumlah seluruh piksel.
+    \item Menormalisasi CDF ke rentang intensitas 0--255.
+    \item Membuat tabel pemetaan dan mengganti nilai setiap piksel.
+    \item Menghasilkan citra dengan Histogram Equalization manual.
+    \item Membandingkan hasil manual dengan implementasi \texttt{cv2.equalizeHist()}.
+    \item Menampilkan perbandingan visual, histogram, kurva CDF, dan tabel pemetaan.
+    \item Menghitung dan membandingkan mean, standar deviasi, entropy, serta rentang intensitas.
 \end{enumerate}
 
 \subsection{Implementasi Manual}

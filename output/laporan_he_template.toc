@@ -18,5 +18,5 @@
 \contentsline {subsubsection}{\numberline {4.4.1}HE pada Citra dengan Kontras Tinggi}{8}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}HE pada Citra Berwarna melalui HSV}{8}{subsubsection.4.4.2}%
 \contentsline {section}{\numberline {5}Kesimpulan}{8}{section.5}%
-\contentsline {section}{\numberline {6}Referensi}{8}{section.6}%
+\contentsline {section}{\numberline {6}Referensi}{9}{section.6}%
 \contentsline {section}{\numberline {A}Kode Lengkap}{9}{section.A}%
